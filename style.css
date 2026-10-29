@@ -1,0 +1,199 @@
+@charset "UTF-8";
+
+/* Clint's Stylesheet */
+
+    /* Starting Styles */
+	
+    body {
+            font-size: 100%;
+            font-family: arial, sans-serif;
+            background: rgb(234, 214, 159);
+        }
+
+    .center {
+            text-align: center;
+        }
+
+    header {
+            background-color: rgb(33, 16, 11);
+        }
+
+    header h1 {
+            font-size: 3em;
+            color: rgb(234, 214, 159);
+            word-spacing: 5px;
+            letter-spacing: 3px;
+            font-family: Pacifico;
+            text-shadow: 0px 6px 3px #846843;
+        }
+
+    nav {
+            margin: 10px auto;
+            width: 960px;
+            background: rgb(33, 16, 11);
+        }
+
+    nav a {
+            font-size: 1em;
+            color: rgb(243, 255, 188);
+            text-transform: uppercase;
+        }
+
+    figure {
+            margin-right: auto;
+            margin-left: auto;
+            width: 960px;
+            background: rgb(243, 255, 188);
+            text-align: center;
+        }
+
+    #content {
+            margin-left: auto;
+            margin-right: auto;
+            width: 960px;
+            background: rgb(243, 255, 188);
+            padding: 5px;
+        }
+
+    .product {
+            width: 300px;
+            background: rgb(234, 214, 159);
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-bottom: 50px;
+            padding: 5px;
+            outline: 2px dashed rgb(234, 214, 159);
+        }
+
+    h2 {
+            font-size: 2em;
+            font-family: Pacifico;
+        }
+
+    h3 {
+            font-size: 1.5em;
+        }
+
+    main {
+            padding-bottom: 20px;
+        }
+
+    form {
+            width: 320px;
+            margin: 20px auto;
+        }
+
+    button {
+            display: inline-block;
+            margin: 0px 0px 0px 10px;
+        }
+
+    form div {
+            padding: 5px;
+        }
+
+    #contact p {
+			clear: left;
+            margin: 10px;
+        }
+
+    footer {
+            background: rgb(33, 16, 11);
+            color: rgb(243, 255, 188);
+            font-size: 0.8em;
+            margin-top: 50px;
+            padding: 10px;
+        }
+
+    address p {
+            margin: 0;
+        }
+
+        /* Clint's Float Styles */
+		
+	.product { 
+		float: left; 
+		} 
+
+	#contact { 
+		clear: left; 
+		} 
+
+	nav { 
+		clear: both;
+		width: 100%;
+		margin: 10px auto;
+		background: rgb(33, 16, 11);
+		overflow: hidden;
+		float: none;
+		} 
+
+	ul { 
+		list-style-type: none; 
+		padding-left: 0px; 
+		margin: 0; 
+		float: left;
+		position: relative;
+		left: 50%;
+		} 
+
+	ul li {
+		float: left;
+		position: relative;
+		left: -50%;
+		}
+
+	nav a { 
+		display: block; 
+		padding: 10px 20px; 
+		text-decoration: none; 
+		} 
+
+/* Clint's Position Styles */
+	#banner {
+    position: fixed;
+	top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+		}
+		
+	body {
+		margin: 0;
+	}
+	
+.logo {
+    float: left;
+    height: 100%;
+	padding-left: 40px;
+    object-fit: contain;
+}
+    figure {
+		margin-top: 260px;
+    float: none;
+        }
+/* Product Overlay Styles */
+.product {
+  position: relative;
+}
+
+.product p:last-of-type {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  margin-bottom: 0;
+  padding: 10px;
+  background: rgba(33, 16, 11, 0.75);
+  color: rgb(243, 255, 188);
+  box-sizing: border-box;
+}
+
+nav {
+  background: rgb(0, 0, 0)
+}
+
+nav a:hover {
+  color: rgb(255, 0, 0)
+}

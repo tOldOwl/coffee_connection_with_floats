@@ -7,182 +7,38 @@
 <head>
     <meta charset="utf-8">
     <title>Coffee Connection</title>
-    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+		<link rel="stylesheet" href="style.css">
     <style>
-        /* Starting Styles */
-        body {
-            font-size: 100%;
-            font-family: arial, sans-serif;
-            background: rgb(234, 214, 159);
-        }
-
-        .center {
-            text-align: center;
-        }
-
-        header {
-            background-color: rgb(33, 16, 11);
-        }
-
-        header h1 {
-            font-size: 3em;
-            color: rgb(234, 214, 159);
-            word-spacing: 5px;
-            letter-spacing: 3px;
-            font-family: Pacifico;
-            text-shadow: 0px 6px 3px #846843;
-        }
-
-        nav {
-            margin: 10px auto;
-            width: 960px;
-            background: rgb(33, 16, 11);
-        }
-
-        nav a {
-            font-size: 1em;
-            color: rgb(243, 255, 188);
-            text-transform: uppercase;
-        }
-
-        figure {
-            margin-right: auto;
-            margin-left: auto;
-            width: 960px;
-            background: rgb(243, 255, 188);
-            text-align: center;
-        }
-
-        #content {
-            margin-left: auto;
-            margin-right: auto;
-            width: 960px;
-            background: rgb(243, 255, 188);
-            padding: 5px;
-        }
-
-        .product {
-            width: 300px;
-            background: rgb(234, 214, 159);
-            margin-left: 5px;
-            margin-right: 5px;
-            margin-bottom: 50px;
-            padding: 5px;
-            outline: 2px dashed rgb(234, 214, 159);
-        }
-
-        h2 {
-            font-size: 2em;
-            font-family: Pacifico;
-        }
-
-        h3 {
-            font-size: 1.5em;
-        }
-
-        main {
-            padding-bottom: 20px;
-        }
-
-        form {
-            width: 320px;
-            margin: 20px auto;
-        }
-
-        button {
-            display: inline-block;
-            margin: 0px 0px 0px 10px;
-        }
-
-        form div {
-            padding: 5px;
-        }
-
-        #contact p {
-			clear: left;
-            margin: 10px;
-        }
-
-        footer {
-            background: rgb(33, 16, 11);
-            color: rgb(243, 255, 188);
-            font-size: 0.8em;
-            margin-top: 50px;
-            padding: 10px;
-        }
-
-        address p {
-            margin: 0;
-        }
-
-        /* Clint's Styles */
-		
-/* Clint's Styles */
-		
-.product { 
-    float: left; 
-} 
-
-#contact { 
-    clear: left; 
-} 
-
-nav { 
-    clear: both;
-    width: 960px;
-    margin: 10px auto;
-    background: rgb(33, 16, 11);
-    overflow: hidden;
-    float: none;
-} 
-
-
-ul { 
-    list-style-type: none; 
-    padding-left: 0px; 
-    margin: 0; 
-    float: left;
-    position: relative;
-    left: 50%;
-} 
-
-ul li {
-    float: left;
-    position: relative;
-    left: -50%;
-}
-
-nav a { 
-    display: block; 
-    padding: 10px 20px; 
-    text-decoration: none; 
-} 
-
-nav a:hover { 
-    background-color: rgb(243, 255, 188); 
-    color: rgb(33, 16, 11); 
-}
-
     </style>
 </head>
 
 <body>
-    <header class="center">
-        <h1>Coffee Connection</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Locations</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+
+	<div id="banner">
+		<header class="center">
+			<img src="images/logo.png" alt="Coffee Connection Logo" class="logo">
+			<h1>Coffee Connection</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Products</a></li>
+				<li><a href="#">Locations</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+		</header>
+	</div>
+	
     <figure class="center">
         <img src="images/people.png" alt="people drinking coffee">
     </figure>
+	
     <main id="content">
+	
+
+
         <h2 class="center">Welcome to Coffee Connection!</h2>
         <blockquote>We’re not just passionate lovers of coffee, but everything else
             that goes with a full and rewarding coffeehouse experience. We also offer
@@ -194,32 +50,33 @@ nav a:hover {
             up or even work. We’re a neighborhood gathering place, a part of the
             daily routine, and would like to be part of your way of life.
         </blockquote>
+		
         <section id="products">
             <div class="product center">
                 <h3>Espresso</h3>
                 <p><img src="images/coffee_espresso.jpg" alt="expresso coffee"></p>
-                <p>Popular espresso beverages</p>
+                <p class="overlay">Popular espresso beverages</p>
             </div>
             <div class="product center">
                 <h3>Blended</h3>
                 <p><img src="images/coffee_blended.jpg" alt="blended coffee drinks">
                 </p>
-                <p>Delicious icy blends</p>
+                <p class="overlay">Delicious icy blends</p>
             </div>
             <div class="product center">
                 <h3>Pastries</h3>
                 <p><img src="images/coffee_pastries.jpg" alt="pastries"></p>
-                <p>Muffins, bagels, coffee cakes, and more</p>
+                <p class="overlay">Muffins, bagels, coffee cakes, and more</p>
             </div>
             <div class="product center">
                 <h3>Food</h3>
                 <p><img src="images/coffee_food.jpg" alt="anytime food"></p>
-                <p>Sandwiches, paninis, salads and more</p>
+                <p class="overlay">Sandwiches, paninis, salads and more</p>
             </div>
             <div class="product center">
                 <h3>Breakfast</h3>
                 <p><img src="images/coffee_breakfast.jpg" alt="breakfast food"></p>
-                <p>Biscuits, muffins, wraps, croissants, oatmeal and more</p>
+                <p class="overlay">Biscuits, muffins, wraps, croissants, oatmeal and more</p>
             </div>
         </section>
         <section id="contact">
